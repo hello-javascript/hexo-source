@@ -10,15 +10,15 @@ java代码：
 callback= request.getParameter("callback");
 ```
 .net代码:
-``````javascript
+```javascript
 string callback = Request.QueryString["callback"];
 ```
 php代码：
-``````javascript
+```javascript
 $callback=$_GET['callback'];
 ```
 统一返回`callback(data)`//callback是获取的callback的值，data是原本要返回的结果集
-``````javascript
+```javascript
 $.ajax({
     type: "get",
     url: "action地址", // 这个就是不同于当前域的一个URL地址
@@ -32,7 +32,7 @@ $.ajax({
 });
 ```
 另一种方式
-``````javascript
+```javascript
 $.getJSON("action地址?callback=?",
    function(result) {
     }
